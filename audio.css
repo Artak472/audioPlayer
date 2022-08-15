@@ -19,16 +19,16 @@ body{
 }
 
 .player {
-background-color: rgba(237, 165, 214, 0.5);
-position: absolute;
-transform: translate(-50%, -50%);
-top: 50%;
-left: 50%;
-height: 450px;
-width: 350px;
-border-radius: 20px;
-overflow: hidden;
-box-shadow: 4px 10px 10px;
+    background-color: rgba(237, 165, 214, 0.5);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 10px 10px;
 }
 
 .row1{
@@ -211,8 +211,59 @@ box-shadow: 4px 10px 10px;
     height: 23px;  
 }
 
+.inputDiv{
+    width: 100%;
+    background-color: rgb(253, 191, 75);
+    height: 50%;
+}
+
+.inputs{
+    margin-top: 20px;
+    position: absolute;
+    left: 30%;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #202020;
+}
+
+.inputs button{
+    position: absolute;
+    left: 35%;
+    width: 102px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(60 59 59);
+    color: rgb(255, 193, 0);
+    text-shadow: 1px 1px 7px;
+    box-shadow: 2px 2px 7px black;
+    font-weight: bold;
+}
+
+.inputs button:hover{
+    background-color: rgb(189, 188, 188);
+    color: black;
+}
+
 .input{
     display: flex;
+}
+
+.input p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(255, 193, 0);
+    text-shadow: 1px 1px 10px;
+}
+
+.input input{
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180);
+    border-color: rgb(255, 193, 0);
+    margin-left: 5px;
+    box-shadow: 2px 2px 15px rgb(255 193 0);
 }
 
 #nameDiv{
@@ -221,7 +272,7 @@ box-shadow: 4px 10px 10px;
     top: 85%;
     left: 50%;
     height: 100px;
-    width: 550px;
+    width: 67%;
     overflow: hidden;
     text-align: center;
     font-family: monospace;
@@ -251,7 +302,7 @@ box-shadow: 4px 10px 10px;
         
     }
     40%{
-        width: 550px;  
+        width: 67%;  
     }
     70%{
         text-shadow: 1px 1px 40px #ffe2ab00;
@@ -268,6 +319,7 @@ box-shadow: 4px 10px 10px;
 
 #myName{
     position: absolute;
+    width: 95%;
 }
 
 #Tumo{
@@ -275,4 +327,163 @@ box-shadow: 4px 10px 10px;
     transform: translate(-50%, -50%);
     top: 10%;
     left: 90%;
+}
+
+
+
+@media (max-width: 913px) {
+    #Tumo{
+        left:50%;
+    }
+    .inputDiv{
+        height: 30%;
+    }
+    .player{
+        width: 500px;
+        height: 600px;
+    }
+    #pre{
+        width: 50px;
+        height: 50px;
+    }
+    #play{
+        width: 55px;
+        height: 55px;
+    }
+    #next{
+        width: 50px;
+        height: 50px;
+    }
+    #currentTime{
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    #decrease{
+        width: 40px;
+        height: 40px;
+    }
+    #mute{
+        width: 40px;
+        height: 40px;
+    }
+    #increase{
+        width: 40px;
+        height: 40px;
+    }
+    #songTitle{
+        font-size: 25px;
+    }
+    .handle{
+        height: 7px;
+    }
+}
+
+@media (max-width: 545px) {
+    #nameDiv{
+        height: 50px;
+        border-radius: 10px;
+    }
+    #Tumo{
+        left:50%;
+    }
+    .inputs{
+        width: 50%;
+        left: 23%;
+    }
+    .inputDiv{
+        height: 50%;
+    }
+    .player{
+        width: 350px;
+        height: 450px;
+    }
+    #pre{
+        width: 30px;
+        height: 30px;
+    }
+    #play{
+        width: 35px;
+        height: 35px;
+    }
+    #next{
+        width: 30px;
+        height: 30px;
+    }
+    #currentTime{
+        margin-left: 35px;
+        font-size: 15px;
+    }
+    #decrease{
+        width: 20px;
+        height: 20px;
+    }
+    #mute{
+        width: 20px;
+        height: 20px;
+    }
+    #increase{
+        width: 20px;
+        height: 20px;
+    }
+    #songTitle{
+        font-size: 18px;
+    }
+    .handle{
+        height: 5px;
+    }
+}
+
+@media (max-width: 415px) {
+    #nameDiv{
+        height: 50px;
+        border-radius: 10px;
+    }
+    #Tumo{
+        left:50%;
+    }
+    .inputs{
+        width: 90%;
+        left: 0;
+    }
+    .inputDiv{
+        height: 30%;
+    }
+    .player{
+        width: 350px;
+        height: 450px;
+    }
+    #pre{
+        width: 30px;
+        height: 30px;
+    }
+    #play{
+        width: 35px;
+        height: 35px;
+    }
+    #next{
+        width: 30px;
+        height: 30px;
+    }
+    #currentTime{
+        margin-left: 35px;
+        font-size: 15px;
+    }
+    #decrease{
+        width: 20px;
+        height: 20px;
+    }
+    #mute{
+        width: 20px;
+        height: 20px;
+    }
+    #increase{
+        width: 20px;
+        height: 20px;
+    }
+    #songTitle{
+        font-size: 18px;
+    }
+    .handle{
+        height: 5px;
+    }
 }
